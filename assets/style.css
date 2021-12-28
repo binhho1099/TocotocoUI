@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap');
+:root{
+    --primary-color: #d3b673;
+    --black-color: #282828;
+    --white-color: #fff;
+}   
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Baloo 2', cursive;
+    line-height: 1.6rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* HEADER */
+.header{
+    background-color: var(--black-color);
+    height: 8rem;
+    max-width: 100%;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header_nav-logo > img {
+    width: 200px;
+    margin-right: 3rem;
+}
+.header_nav-list{
+    display: flex;
+    align-items: center;
+}
+.header_nav-item{
+    padding: 0 1.5rem;
+}
+.header_nav-item:hover .header_nav-link{
+    color: var(--primary-color);
+}
+.header_nav-link{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    transition: all linear 0.2s;
+}
+
+.header_search{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+    cursor: pointer;
+
+    color: var(--white-color);
+    font-size: 1.4rem;
+    transition: all linear .2s;
+}
+
+.header_search:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/* HOME */
+.home{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("./img/background-home.jpg") no-repeat center;
+    display: flex;
+}
+
+.home_content{
+    margin: auto;
+    text-align: center;
+}
+.home_content-heading{
+    color: var(--primary-color);
+    font-size: 5rem;
+    line-height: 10rem;
+}
+.home_content-subheading{
+    color: var(--white-color);
+    font-size: 6rem;
+    line-height: 6rem;
+}
+.home_content-slogan{
+    margin-top: 3rem;
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    outline: none;
+    background-color: transparent;
+
+    font-size: 1.6rem;
+    font-weight: 700;    
+    margin-top: 3.5rem;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.title{
+    text-align: center;
+}
+.title_primary{
+    font-size: 3rem;
+    color: var(--primary-color);
+    line-height: 4rem;
+}
+.title_sub{
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+/* ABOUT */
+.about{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about_banner{
+    width: 100%;
+}
+.about_content{
+    position: absolute;
+}
