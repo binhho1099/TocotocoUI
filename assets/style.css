@@ -168,6 +168,12 @@ ul,ol{
     font-size: 3.5rem;
     line-height: 4rem;
 }
+.product__title-img{
+    margin: 0 auto;
+    background: url(./img/product/title_line.webp) no-repeat center;
+    width: 315px;
+    height: 30px;
+}
 /* PRODUCT */
 .product {
     padding-top: 5rem;
@@ -372,7 +378,7 @@ ul,ol{
 .footer_item{
     color: var(--white-color);
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.55rem;
 }
 .footer_link{
     color: var(--white-color);
@@ -383,11 +389,38 @@ ul,ol{
     width: 65%;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+}
+.footer_item-app a{
+    width: 45%;
+    margin-bottom: 1rem;
 }
 .footer_item-app img{
     width: 100%;
 }
+
+.footer_line{
+    height: 1px;
+    width: 100%;
+    background-color: var(--white-color);
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+    align-items: center;
+}
+.footer_bottom-left{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.footer_bottom-right{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
 
 /* ANIMATION */
 @keyframes ZoomInProduct {
