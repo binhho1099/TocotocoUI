@@ -18,13 +18,11 @@
                     </a>
                 </div>
                 <ul class="header_nav-list">
-                    <li class="header_nav-item"><a href="#" class="header_nav-link">Trang chủ</a></li>
-                    <li class="header_nav-item"><a href="#" class="header_nav-link">Giới thiệu</a></li>
-                    <li class="header_nav-item"><a href="#" class="header_nav-link">Sản phẩm</a></li>
-                    <li class="header_nav-item"><a href="#" class="header_nav-link">Tin tức</a></li>
-                    <li class="header_nav-item"><a href="#" class="header_nav-link">Cửa hàng</a></li>
-                    <li class="header_nav-item"><a href="#" class="header_nav-link">Tuyển dụng</a></li>
-                    <li class="header_nav-item"><a href="#" class="header_nav-link">Nhượng quyền</a></li>
+                    <li class="header_nav-item"><a href="#home" class="header_nav-link">Trang chủ</a></li>
+                    <li class="header_nav-item"><a href="#about" class="header_nav-link">Giới thiệu</a></li>
+                    <li class="header_nav-item"><a href="#product" class="header_nav-link">Sản phẩm</a></li>
+                    <li class="header_nav-item"><a href="#franchise" class="header_nav-link">Nhượng quyền</a></li>
+                    <li class="header_nav-item"><a href="#contact" class="header_nav-link">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="header_search">
@@ -34,7 +32,7 @@
     </header>
     
     <div class="main">
-        <div class="home">
+        <div class="home" id="home">
             <div class="home_content">
                 <h1 class="home_content-heading">ToCoToCo Tea</h1>
                 <h2 class="home_content-subheading">ĐẬM VỊ THIÊN NHIÊN <br> TRỌN VỊ HẠNH PHÚC</h2>
@@ -43,7 +41,7 @@
                 <button class="btn">ĐẶT HÀNG NGAY</button>
             </div>
         </div>
-        <div class="product container">
+        <div class="product container" id="product">
             <div class="product__title">
                 <h2 class="product__title-primary">
                     ToCoToCo Menu
@@ -51,7 +49,7 @@
                 <h3 class="product__title-sub">
                     Sản phẩm nổi bật
                 </h3>
-                <div class="product__title-img"></div>
+                <img src="./assets/img/home_line.png" alt="home_line" class="title__icon">
             </div>
             <div class="product__content">
                 <ul class="product__list">
@@ -189,19 +187,50 @@
                 </ul>
             </div>
         </div>
-        <div class="about container">
-            <img src="./assets/img/banner_about_us.png" alt="banner_about_us" class="about_banner">
-            <div class="title about_content">
-                <h2 class="title_primary">
-                    ToCoToCo Story
-                </h2>
-                <h3 class="title_sub">
-                    VỀ CHÚNG TÔI
-                </h3>
+        <div class="about container" id="about">
+            <img src="./assets/img/banner_about_us.png" alt="banner_about_us" class="about__banner">
+            <div class="about__content">
+                <div class="about__title">
+                    <h2 class="about__title-primary">
+                        ToCoToCo Story
+                    </h2>
+                    <h3 class="about__title-sub">
+                        VỀ CHÚNG TÔI
+                    </h3>
+                    <img src="./assets/img/home_line.png" alt="home_line" class="title__icon">
+                </div>
+                <div class="about__desc">
+                    Bên cạnh niềm tự hào về những ly trà sữa ngon – sạch – tươi, chúng tôi luôn tự tin mang đến khách hàng những trải nghiệm tốt nhất về dịch vụ và không gian.
+                </div>
+                <div class="about__btn">
+                    XEM THÊM
+                </div>
+            </div>
+        </div>
+        <div class="franchise container" id="franchise">
+            <div class="franchise__home-left">
+                <div class="franchise__title">
+                    <h2 class="franchise__title-primary">
+                        ToCoToCo Franchise
+                    </h2>
+                    <h3 class="franchise__title-sub">
+                        NHƯỢNG QUYỀN
+                    </h3>
+                    <img src="./assets/img/home_line.png" alt="home_line" class="title__icon">
+                </div>
+                <div class="franchise__desc">
+                     Gia nhập đế chế 300 TRIỆU USD. Nếu bạn bắt đầu kinh doanh khởi nghiệp ẩm thực, hoặc muốn đầu tư vào lĩnh vực này, thương hiệu TocoToco chắc chắn sẽ là một lựa chọn đáng cân nhắc cho bạn.
+                </div>
+                <div class="franchise__btn">
+                    XEM THÊM
+                </div>
+            </div>
+            <div class="franchise__home-right">
+                <img src="./assets/img/img_home_franchise.png" alt="franchise_pic" class="franchise__pic">
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer_container">
                 <div class="footer_logo">
