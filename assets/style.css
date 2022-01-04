@@ -489,6 +489,8 @@ ul,ol{
     color: var(--white-color);
     font-size: 1.6rem;
     margin-bottom: 1.55rem;
+    display: flex;
+    align-items: center;
 }
 .footer_link{
     color: var(--white-color);
@@ -529,6 +531,18 @@ ul,ol{
 .footer_bottom-right{
     font-size: 1.4rem;
     font-weight: 100;
+}
+
+.footer_icon{
+    color: var(--primary-color);
+    font-size: 2rem;
+    min-width: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.footer_link{
+    display: inline-block;
+    padding-right: 15px;
 }
 
 
