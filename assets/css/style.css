@@ -1,0 +1,115 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap');
+:root{
+    --primary-color: #d3b673;
+    --black-color: #282828;
+    --white-color: #fff;
+}  
+html{
+    line-height: 1.6rem;
+    font-size: 62.5%;
+    font-family: 'Baloo 2', cursive;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.btn{
+    padding: 1rem 2rem;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    outline: none;
+    background-color: transparent;
+
+    font-size: 1.6rem;
+    font-weight: 700;    
+    margin-top: 3.5rem;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.title{
+    text-align: center;
+}
+.title_primary{
+    font-size: 3rem;
+    color: var(--primary-color);
+    line-height: 4rem;
+}
+.title_sub{
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+/* icon fixed */
+.fixed__delivery {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 24px;
+    bottom: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0px 8px 36px rgb(0 0 0 / 17%);
+    z-index: 90;
+}
+
+.fixed__delivery img {
+    width: 60px;
+    animation: vibrate25 1.5s infinite;
+}
+
+/* ANIMATION */
+@keyframes ZoomInProduct {
+    0% {
+        transform: scale(1);
+        /* opacity: 0.5; */
+    }
+    100% {
+        transform: scale(1.15);
+        /* opacity: 1; */
+    }
+}
+@keyframes vibrate25 {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-25deg);
+    }
+    20% {
+        transform: rotate(25deg);
+    }
+    30% {
+        transform: rotate(-25deg);
+    }
+    40% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
